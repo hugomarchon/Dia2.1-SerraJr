@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Magra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="dia2.1.css">
+    <title>Dia 2.1</title>
+</head>
+<body>
+    <div> 
+        <h1 class ='titulo'><b>Serra Calculator</b></h1>
+    </div>
+<div class="doisdecima">
+    <div class= "caixaesquerda">
+    <form class= "conteudo" name="soma">
+        <h1 class="subtitulo" style="font-size: 36px;"><b>Soma</b> </h1>
+        
+         <b>Número 1</b> <input class ="input" type="number" id="num1"  onchange="somar()" style = " margin-left: 50px;"> <br>
+         <b>Número 2</b> <input class ="input" type="number" id="num2"  onchange="somar()" style = "margin-top: 10px; margin-left: 49px;"> <br>
+         <b>Resultado</b> <input class ="input" name="resultadosoma" readonly='true' style = "margin-top: 10px; margin-left: 45px;"></input> 
+    </form>
+    </div>
+
+    <div class= "caixadireita">
+    <form class= "conteudo" name="subtracao">
+        <h1 class="subtitulo" style="font-size: 36px;"><b>Subtração</b> </h1>
+        
+         <b>Número 1</b> <input class ="input" type="number" id="num1"  onchange="subtrair()" style = " margin-left: 50px;"> <br>
+         <b>Número 2</b> <input class ="input" type="number" id="num2"  onchange="subtrair()" style = "margin-top: 10px; margin-left: 49px;"> <br>
+         <b>Resultado</b> <input class ="input" name="resultadosubtracao"  readonly='true' style = "margin-top: 10px; margin-left: 45px;"></input> 
+    </form>
+    </div>
+</div>
+
+<div class="doisdebaixo">
+    <div class= "caixaesquerda">
+    <form class= "conteudo" name="multiplicacao">
+        <h1 class="subtitulo" style="font-size: 36px;"><b>Multiplicação</b> </h1>
+        
+         <b>Número 1</b> <input class ="input" type="number" id="num1"  onchange="multiplicar()" style = " margin-left: 50px;"> <br>
+         <b>Número 2</b> <input class ="input" type="number" id="num2"  onchange="multiplicar()" style = "margin-top: 10px; margin-left: 49px;"> <br>
+         <b>Resultado</b> <input class ="input" name="resultadomultiplicacao" readonly='true' style = "margin-top: 10px; margin-left: 45px;"></input> 
+    </form>
+    </div>
+
+    <div class= "caixadireita">
+    <form class= "conteudo" name="divisao">
+        <h1 class="subtitulo" style="font-size: 36px;"><b>Divisão</b> </h1>
+        
+         <b>Número 1</b> <input class ="input" type="number" id="num1"  onchange="dividir()" style = " margin-left: 50px;"> <br>
+         <b>Número 2</b> <input class ="input" type="number" id="num2"  onchange="dividir()" style = "margin-top: 10px; margin-left: 49px;"> <br>
+         <b>Resultado</b> <input class ="input" name="resultadodivisao" readonly='true' style = "margin-top: 10px; margin-left: 45px;"></input> 
+    </form>
+    </div>
+</div>
+    
+</body>
+</html>
+
+<script type="text/javascript" src="calcula.js"></script>
